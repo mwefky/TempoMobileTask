@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59427D51267B9493003E669E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59427D50267B9493003E669E /* AppDelegate.swift */; };
+		59427D53267B9494003E669E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59427D52267B9494003E669E /* SceneDelegate.swift */; };
+		59427D55267B9494003E669E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59427D54267B9494003E669E /* ViewController.swift */; };
+		59427D58267B9494003E669E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59427D56267B9494003E669E /* Main.storyboard */; };
+		59427D5A267B9496003E669E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59427D59267B9496003E669E /* Assets.xcassets */; };
+		59427D5D267B9496003E669E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59427D5B267B9496003E669E /* LaunchScreen.storyboard */; };
+		59427D68267B9497003E669E /* TempoMobileTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59427D67267B9497003E669E /* TempoMobileTaskTests.swift */; };
+		59427D73267B9497003E669E /* TempoMobileTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59427D72267B9497003E669E /* TempoMobileTaskUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59427D64267B9497003E669E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59427D45267B9493003E669E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59427D4C267B9493003E669E;
+			remoteInfo = TempoMobileTask;
+		};
+		59427D6F267B9497003E669E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59427D45267B9493003E669E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59427D4C267B9493003E669E;
+			remoteInfo = TempoMobileTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59427D4D267B9493003E669E /* TempoMobileTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempoMobileTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59427D50267B9493003E669E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59427D52267B9494003E669E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		59427D54267B9494003E669E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		59427D57267B9494003E669E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59427D59267B9496003E669E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59427D5C267B9496003E669E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59427D5E267B9496003E669E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59427D63267B9497003E669E /* TempoMobileTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempoMobileTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59427D67267B9497003E669E /* TempoMobileTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoMobileTaskTests.swift; sourceTree = "<group>"; };
+		59427D69267B9497003E669E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59427D6E267B9497003E669E /* TempoMobileTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempoMobileTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59427D72267B9497003E669E /* TempoMobileTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoMobileTaskUITests.swift; sourceTree = "<group>"; };
+		59427D74267B9497003E669E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59427D4A267B9493003E669E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59427D60267B9497003E669E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59427D6B267B9497003E669E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59427D44267B9493003E669E = {
+			isa = PBXGroup;
+			children = (
+				59427D4F267B9493003E669E /* TempoMobileTask */,
+				59427D66267B9497003E669E /* TempoMobileTaskTests */,
+				59427D71267B9497003E669E /* TempoMobileTaskUITests */,
+				59427D4E267B9493003E669E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59427D4E267B9493003E669E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59427D4D267B9493003E669E /* TempoMobileTask.app */,
+				59427D63267B9497003E669E /* TempoMobileTaskTests.xctest */,
+				59427D6E267B9497003E669E /* TempoMobileTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59427D4F267B9493003E669E /* TempoMobileTask */ = {
+			isa = PBXGroup;
+			children = (
+				59427D50267B9493003E669E /* AppDelegate.swift */,
+				59427D52267B9494003E669E /* SceneDelegate.swift */,
+				59427D54267B9494003E669E /* ViewController.swift */,
+				59427D56267B9494003E669E /* Main.storyboard */,
+				59427D59267B9496003E669E /* Assets.xcassets */,
+				59427D5B267B9496003E669E /* LaunchScreen.storyboard */,
+				59427D5E267B9496003E669E /* Info.plist */,
+			);
+			path = TempoMobileTask;
+			sourceTree = "<group>";
+		};
+		59427D66267B9497003E669E /* TempoMobileTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				59427D67267B9497003E669E /* TempoMobileTaskTests.swift */,
+				59427D69267B9497003E669E /* Info.plist */,
+			);
+			path = TempoMobileTaskTests;
+			sourceTree = "<group>";
+		};
+		59427D71267B9497003E669E /* TempoMobileTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59427D72267B9497003E669E /* TempoMobileTaskUITests.swift */,
+				59427D74267B9497003E669E /* Info.plist */,
+			);
+			path = TempoMobileTaskUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59427D4C267B9493003E669E /* TempoMobileTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59427D77267B9497003E669E /* Build configuration list for PBXNativeTarget "TempoMobileTask" */;
+			buildPhases = (
+				59427D49267B9493003E669E /* Sources */,
+				59427D4A267B9493003E669E /* Frameworks */,
+				59427D4B267B9493003E669E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TempoMobileTask;
+			productName = TempoMobileTask;
+			productReference = 59427D4D267B9493003E669E /* TempoMobileTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59427D62267B9497003E669E /* TempoMobileTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59427D7A267B9497003E669E /* Build configuration list for PBXNativeTarget "TempoMobileTaskTests" */;
+			buildPhases = (
+				59427D5F267B9497003E669E /* Sources */,
+				59427D60267B9497003E669E /* Frameworks */,
+				59427D61267B9497003E669E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59427D65267B9497003E669E /* PBXTargetDependency */,
+			);
+			name = TempoMobileTaskTests;
+			productName = TempoMobileTaskTests;
+			productReference = 59427D63267B9497003E669E /* TempoMobileTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		59427D6D267B9497003E669E /* TempoMobileTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59427D7D267B9497003E669E /* Build configuration list for PBXNativeTarget "TempoMobileTaskUITests" */;
+			buildPhases = (
+				59427D6A267B9497003E669E /* Sources */,
+				59427D6B267B9497003E669E /* Frameworks */,
+				59427D6C267B9497003E669E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59427D70267B9497003E669E /* PBXTargetDependency */,
+			);
+			name = TempoMobileTaskUITests;
+			productName = TempoMobileTaskUITests;
+			productReference = 59427D6E267B9497003E669E /* TempoMobileTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59427D45267B9493003E669E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					59427D4C267B9493003E669E = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					59427D62267B9497003E669E = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 59427D4C267B9493003E669E;
+					};
+					59427D6D267B9497003E669E = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 59427D4C267B9493003E669E;
+					};
+				};
+			};
+			buildConfigurationList = 59427D48267B9493003E669E /* Build configuration list for PBXProject "TempoMobileTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59427D44267B9493003E669E;
+			productRefGroup = 59427D4E267B9493003E669E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59427D4C267B9493003E669E /* TempoMobileTask */,
+				59427D62267B9497003E669E /* TempoMobileTaskTests */,
+				59427D6D267B9497003E669E /* TempoMobileTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59427D4B267B9493003E669E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59427D5D267B9496003E669E /* LaunchScreen.storyboard in Resources */,
+				59427D5A267B9496003E669E /* Assets.xcassets in Resources */,
+				59427D58267B9494003E669E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59427D61267B9497003E669E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59427D6C267B9497003E669E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59427D49267B9493003E669E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59427D55267B9494003E669E /* ViewController.swift in Sources */,
+				59427D51267B9493003E669E /* AppDelegate.swift in Sources */,
+				59427D53267B9494003E669E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59427D5F267B9497003E669E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59427D68267B9497003E669E /* TempoMobileTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59427D6A267B9497003E669E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59427D73267B9497003E669E /* TempoMobileTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59427D65267B9497003E669E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59427D4C267B9493003E669E /* TempoMobileTask */;
+			targetProxy = 59427D64267B9497003E669E /* PBXContainerItemProxy */;
+		};
+		59427D70267B9497003E669E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59427D4C267B9493003E669E /* TempoMobileTask */;
+			targetProxy = 59427D6F267B9497003E669E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		59427D56267B9494003E669E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59427D57267B9494003E669E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		59427D5B267B9496003E669E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59427D5C267B9496003E669E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59427D75267B9497003E669E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		59427D76267B9497003E669E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59427D78267B9497003E669E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8LWPD3RV8;
+				INFOPLIST_FILE = TempoMobileTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dozzan.TempoMobileTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59427D79267B9497003E669E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8LWPD3RV8;
+				INFOPLIST_FILE = TempoMobileTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dozzan.TempoMobileTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		59427D7B267B9497003E669E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8LWPD3RV8;
+				INFOPLIST_FILE = TempoMobileTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dozzan.TempoMobileTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TempoMobileTask.app/TempoMobileTask";
+			};
+			name = Debug;
+		};
+		59427D7C267B9497003E669E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8LWPD3RV8;
+				INFOPLIST_FILE = TempoMobileTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dozzan.TempoMobileTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TempoMobileTask.app/TempoMobileTask";
+			};
+			name = Release;
+		};
+		59427D7E267B9497003E669E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8LWPD3RV8;
+				INFOPLIST_FILE = TempoMobileTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dozzan.TempoMobileTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TempoMobileTask;
+			};
+			name = Debug;
+		};
+		59427D7F267B9497003E669E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8LWPD3RV8;
+				INFOPLIST_FILE = TempoMobileTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dozzan.TempoMobileTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TempoMobileTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59427D48267B9493003E669E /* Build configuration list for PBXProject "TempoMobileTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59427D75267B9497003E669E /* Debug */,
+				59427D76267B9497003E669E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59427D77267B9497003E669E /* Build configuration list for PBXNativeTarget "TempoMobileTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59427D78267B9497003E669E /* Debug */,
+				59427D79267B9497003E669E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59427D7A267B9497003E669E /* Build configuration list for PBXNativeTarget "TempoMobileTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59427D7B267B9497003E669E /* Debug */,
+				59427D7C267B9497003E669E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59427D7D267B9497003E669E /* Build configuration list for PBXNativeTarget "TempoMobileTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59427D7E267B9497003E669E /* Debug */,
+				59427D7F267B9497003E669E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59427D45267B9493003E669E /* Project object */;
+}
