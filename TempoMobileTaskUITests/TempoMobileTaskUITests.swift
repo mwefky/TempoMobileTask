@@ -6,33 +6,57 @@
 //
 
 import XCTest
+@testable import TempoMobileTask
 
 class TempoMobileTaskUITests: XCTestCase {
+    var mockviewController: NewsListViewController!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        self.mockviewController = NewsListViewController.loadFromNib()
+        self.mockviewController.loadView()
+        self.mockviewController.viewDidLoad()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
     func testExample() throws {
-        // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
+    func testHasATableView() {
+        XCTAssertNotNil(mockviewController.tableView)
+    }
+    
+    func testTableViewHasDelegate() {
+        XCTAssertNotNil(mockviewController.tableView.delegate)
+    }
+    
+    func testTableViewConfromsToTableViewDelegateProtocol() {
+           XCTAssertTrue(mockviewController.conforms(to: UITableViewDelegate.self))
+    }
+    
+    func testTableViewHasDataSource() {
+        XCTAssertNotNil(mockviewController.tableView.dataSource)
+    }
+    
+    func testTableViewConformsToTableViewDataSourceProtocol() {
+        XCTAssertTrue(mockviewController.conforms(to: UITableViewDataSource.self))
+        XCTAssertTrue(mockviewController.responds(to: #selector(mockviewController.tableView(_:numberOfRowsInSection:))))
+        XCTAssertTrue(mockviewController.responds(to: #selector(mockviewController.tableView(_:cellForRowAt:))))
+    }
+    
+    func testTableViewCellHasReuseIdentifier() {
+           let cell = mockviewController.tableView(mockviewController.tableView, cellForRowAt: IndexPath(row: 0, section: 0)) as? NewsTableViewCell
+           let actualReuseIdentifer = cell?.reuseIdentifier
+           let expectedReuseIdentifier = "NewsTableViewCell"
+           XCTAssertEqual(actualReuseIdentifer, expectedReuseIdentifier)
+    }
+    
     func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
+        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
             // This measures how long it takes to launch your application.
             measure(metrics: [XCTApplicationLaunchMetric()]) {
                 XCUIApplication().launch()

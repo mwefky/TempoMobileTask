@@ -3,18 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		59427D51267B9493003E669E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59427D50267B9493003E669E /* AppDelegate.swift */; };
-		59427D53267B9494003E669E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59427D52267B9494003E669E /* SceneDelegate.swift */; };
-		59427D55267B9494003E669E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59427D54267B9494003E669E /* ViewController.swift */; };
-		59427D58267B9494003E669E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59427D56267B9494003E669E /* Main.storyboard */; };
+		59427D55267B9494003E669E /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59427D54267B9494003E669E /* NewsListViewController.swift */; };
 		59427D5A267B9496003E669E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59427D59267B9496003E669E /* Assets.xcassets */; };
 		59427D5D267B9496003E669E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59427D5B267B9496003E669E /* LaunchScreen.storyboard */; };
 		59427D68267B9497003E669E /* TempoMobileTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59427D67267B9497003E669E /* TempoMobileTaskTests.swift */; };
 		59427D73267B9497003E669E /* TempoMobileTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59427D72267B9497003E669E /* TempoMobileTaskUITests.swift */; };
+		59427D85267B983A003E669E /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59427D82267B983A003E669E /* ApiClient.swift */; };
+		59427D86267B983A003E669E /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59427D83267B983A003E669E /* ApiRouter.swift */; };
+		59427D87267B983A003E669E /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59427D84267B983A003E669E /* NetworkConstants.swift */; };
+		59427D8A267B9A94003E669E /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59427D89267B9A94003E669E /* NewsModel.swift */; };
+		59427D8C267D16C3003E669E /* NewsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59427D8B267D16C3003E669E /* NewsListViewController.xib */; };
+		59427D92267D1874003E669E /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59427D91267D1874003E669E /* NewsViewModel.swift */; };
+		59427D96267D2315003E669E /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59427D94267D2315003E669E /* NewsTableViewCell.swift */; };
+		59427D97267D2315003E669E /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59427D95267D2315003E669E /* NewsTableViewCell.xib */; };
+		59F53D12267E19F5000B782F /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F53D10267E19F5000B782F /* NewsDetailsViewController.swift */; };
+		59F53D13267E19F5000B782F /* NewsDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59F53D11267E19F5000B782F /* NewsDetailsViewController.xib */; };
+		59F53D15267E25BA000B782F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F53D14267E25BA000B782F /* Extensions.swift */; };
+		653C82C74AA8BBFC84614E28 /* Pods_TempoMobileTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DFA83A02C641179C8D95761 /* Pods_TempoMobileTaskTests.framework */; };
+		AA3C838AED3CEBAEB78E2F8C /* Pods_TempoMobileTask_TempoMobileTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85B5DEDDB737CB12BC912EB /* Pods_TempoMobileTask_TempoMobileTaskUITests.framework */; };
+		B6E6CBF6261B89B805A3542D /* Pods_TempoMobileTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E7F21AF7476591EC27D522 /* Pods_TempoMobileTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0329BE9C5DF721D8D8F1CEF8 /* Pods-TempoMobileTask-TempoMobileTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoMobileTask-TempoMobileTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-TempoMobileTask-TempoMobileTaskUITests/Pods-TempoMobileTask-TempoMobileTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		23FE51D4D18BF319DFFCFEE6 /* Pods-TempoMobileTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoMobileTask.release.xcconfig"; path = "Target Support Files/Pods-TempoMobileTask/Pods-TempoMobileTask.release.xcconfig"; sourceTree = "<group>"; };
+		26B1682FD65E84DAAA356FC1 /* Pods-TempoMobileTask-TempoMobileTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoMobileTask-TempoMobileTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-TempoMobileTask-TempoMobileTaskUITests/Pods-TempoMobileTask-TempoMobileTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3C251D030ACFE42400284393 /* Pods-TempoMobileTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoMobileTask.debug.xcconfig"; path = "Target Support Files/Pods-TempoMobileTask/Pods-TempoMobileTask.debug.xcconfig"; sourceTree = "<group>"; };
 		59427D4D267B9493003E669E /* TempoMobileTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempoMobileTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59427D50267B9493003E669E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		59427D52267B9494003E669E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		59427D54267B9494003E669E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		59427D57267B9494003E669E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59427D54267B9494003E669E /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
 		59427D59267B9496003E669E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59427D5C267B9496003E669E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59427D5E267B9496003E669E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +63,22 @@
 		59427D6E267B9497003E669E /* TempoMobileTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempoMobileTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59427D72267B9497003E669E /* TempoMobileTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoMobileTaskUITests.swift; sourceTree = "<group>"; };
 		59427D74267B9497003E669E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59427D82267B983A003E669E /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		59427D83267B983A003E669E /* ApiRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		59427D84267B983A003E669E /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		59427D89267B9A94003E669E /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		59427D8B267D16C3003E669E /* NewsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsListViewController.xib; sourceTree = "<group>"; };
+		59427D91267D1874003E669E /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		59427D94267D2315003E669E /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		59427D95267D2315003E669E /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		59F53D10267E19F5000B782F /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
+		59F53D11267E19F5000B782F /* NewsDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsDetailsViewController.xib; sourceTree = "<group>"; };
+		59F53D14267E25BA000B782F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8DFA83A02C641179C8D95761 /* Pods_TempoMobileTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TempoMobileTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D9F57876FD7E38FADEC077 /* Pods-TempoMobileTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoMobileTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-TempoMobileTaskTests/Pods-TempoMobileTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7B212E36296B61DEACEA44F /* Pods-TempoMobileTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoMobileTaskTests.release.xcconfig"; path = "Target Support Files/Pods-TempoMobileTaskTests/Pods-TempoMobileTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		E6E7F21AF7476591EC27D522 /* Pods_TempoMobileTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TempoMobileTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E85B5DEDDB737CB12BC912EB /* Pods_TempoMobileTask_TempoMobileTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TempoMobileTask_TempoMobileTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E6CBF6261B89B805A3542D /* Pods_TempoMobileTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				653C82C74AA8BBFC84614E28 /* Pods_TempoMobileTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3C838AED3CEBAEB78E2F8C /* Pods_TempoMobileTask_TempoMobileTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +116,8 @@
 				59427D66267B9497003E669E /* TempoMobileTaskTests */,
 				59427D71267B9497003E669E /* TempoMobileTaskUITests */,
 				59427D4E267B9493003E669E /* Products */,
+				B7F1AEE4EE677F087903A0E0 /* Pods */,
+				A567DE49102EB988B8AB4A75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +134,11 @@
 		59427D4F267B9493003E669E /* TempoMobileTask */ = {
 			isa = PBXGroup;
 			children = (
+				59F53D0E267E19C4000B782F /* NewsDetails */,
+				59427D8F267D1841003E669E /* NewsList */,
+				59427D81267B9828003E669E /* Networking */,
 				59427D50267B9493003E669E /* AppDelegate.swift */,
-				59427D52267B9494003E669E /* SceneDelegate.swift */,
-				59427D54267B9494003E669E /* ViewController.swift */,
-				59427D56267B9494003E669E /* Main.storyboard */,
+				59F53D14267E25BA000B782F /* Extensions.swift */,
 				59427D59267B9496003E669E /* Assets.xcassets */,
 				59427D5B267B9496003E669E /* LaunchScreen.storyboard */,
 				59427D5E267B9496003E669E /* Info.plist */,
@@ -128,6 +164,109 @@
 			path = TempoMobileTaskUITests;
 			sourceTree = "<group>";
 		};
+		59427D81267B9828003E669E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				59427D82267B983A003E669E /* ApiClient.swift */,
+				59427D83267B983A003E669E /* ApiRouter.swift */,
+				59427D84267B983A003E669E /* NetworkConstants.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		59427D88267B9A83003E669E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				59427D89267B9A94003E669E /* NewsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		59427D8D267D1829003E669E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				59427D93267D22F2003E669E /* NewsTableViewCell */,
+				59427D8B267D16C3003E669E /* NewsListViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		59427D8E267D1835003E669E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				59427D54267B9494003E669E /* NewsListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		59427D8F267D1841003E669E /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+				59427D90267D1863003E669E /* ViewModel */,
+				59427D88267B9A83003E669E /* Model */,
+				59427D8E267D1835003E669E /* ViewController */,
+				59427D8D267D1829003E669E /* View */,
+			);
+			path = NewsList;
+			sourceTree = "<group>";
+		};
+		59427D90267D1863003E669E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				59427D91267D1874003E669E /* NewsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		59427D93267D22F2003E669E /* NewsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				59427D94267D2315003E669E /* NewsTableViewCell.swift */,
+				59427D95267D2315003E669E /* NewsTableViewCell.xib */,
+			);
+			path = NewsTableViewCell;
+			sourceTree = "<group>";
+		};
+		59F53D0E267E19C4000B782F /* NewsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				59F53D0F267E19D5000B782F /* ViewController */,
+			);
+			path = NewsDetails;
+			sourceTree = "<group>";
+		};
+		59F53D0F267E19D5000B782F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				59F53D10267E19F5000B782F /* NewsDetailsViewController.swift */,
+				59F53D11267E19F5000B782F /* NewsDetailsViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A567DE49102EB988B8AB4A75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6E7F21AF7476591EC27D522 /* Pods_TempoMobileTask.framework */,
+				E85B5DEDDB737CB12BC912EB /* Pods_TempoMobileTask_TempoMobileTaskUITests.framework */,
+				8DFA83A02C641179C8D95761 /* Pods_TempoMobileTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7F1AEE4EE677F087903A0E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C251D030ACFE42400284393 /* Pods-TempoMobileTask.debug.xcconfig */,
+				23FE51D4D18BF319DFFCFEE6 /* Pods-TempoMobileTask.release.xcconfig */,
+				0329BE9C5DF721D8D8F1CEF8 /* Pods-TempoMobileTask-TempoMobileTaskUITests.debug.xcconfig */,
+				26B1682FD65E84DAAA356FC1 /* Pods-TempoMobileTask-TempoMobileTaskUITests.release.xcconfig */,
+				B3D9F57876FD7E38FADEC077 /* Pods-TempoMobileTaskTests.debug.xcconfig */,
+				D7B212E36296B61DEACEA44F /* Pods-TempoMobileTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +274,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59427D77267B9497003E669E /* Build configuration list for PBXNativeTarget "TempoMobileTask" */;
 			buildPhases = (
+				7D3EEB6C3DA3BC54FB0B9176 /* [CP] Check Pods Manifest.lock */,
 				59427D49267B9493003E669E /* Sources */,
 				59427D4A267B9493003E669E /* Frameworks */,
 				59427D4B267B9493003E669E /* Resources */,
+				BB37EF381188706967C72047 /* [CP] Embed Pods Frameworks */,
+				59427D80267B95C9003E669E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -152,6 +294,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59427D7A267B9497003E669E /* Build configuration list for PBXNativeTarget "TempoMobileTaskTests" */;
 			buildPhases = (
+				02BC220F4C36D2F7681BA94F /* [CP] Check Pods Manifest.lock */,
 				59427D5F267B9497003E669E /* Sources */,
 				59427D60267B9497003E669E /* Frameworks */,
 				59427D61267B9497003E669E /* Resources */,
@@ -170,9 +313,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59427D7D267B9497003E669E /* Build configuration list for PBXNativeTarget "TempoMobileTaskUITests" */;
 			buildPhases = (
+				F3B603F94EC0BB3834047489 /* [CP] Check Pods Manifest.lock */,
 				59427D6A267B9497003E669E /* Sources */,
 				59427D6B267B9497003E669E /* Frameworks */,
 				59427D6C267B9497003E669E /* Resources */,
+				AC6AC3DA07230D25060092DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,8 +377,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				59427D5D267B9496003E669E /* LaunchScreen.storyboard in Resources */,
+				59427D8C267D16C3003E669E /* NewsListViewController.xib in Resources */,
+				59427D97267D2315003E669E /* NewsTableViewCell.xib in Resources */,
+				59F53D13267E19F5000B782F /* NewsDetailsViewController.xib in Resources */,
 				59427D5A267B9496003E669E /* Assets.xcassets in Resources */,
-				59427D58267B9494003E669E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +400,141 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02BC220F4C36D2F7681BA94F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TempoMobileTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59427D80267B95C9003E669E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		7D3EEB6C3DA3BC54FB0B9176 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TempoMobileTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC6AC3DA07230D25060092DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TempoMobileTask-TempoMobileTaskUITests/Pods-TempoMobileTask-TempoMobileTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TempoMobileTask-TempoMobileTaskUITests/Pods-TempoMobileTask-TempoMobileTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TempoMobileTask-TempoMobileTaskUITests/Pods-TempoMobileTask-TempoMobileTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB37EF381188706967C72047 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TempoMobileTask/Pods-TempoMobileTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TempoMobileTask/Pods-TempoMobileTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TempoMobileTask/Pods-TempoMobileTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3B603F94EC0BB3834047489 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TempoMobileTask-TempoMobileTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		59427D49267B9493003E669E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59427D55267B9494003E669E /* ViewController.swift in Sources */,
+				59427D8A267B9A94003E669E /* NewsModel.swift in Sources */,
+				59427D87267B983A003E669E /* NetworkConstants.swift in Sources */,
+				59427D96267D2315003E669E /* NewsTableViewCell.swift in Sources */,
+				59427D55267B9494003E669E /* NewsListViewController.swift in Sources */,
 				59427D51267B9493003E669E /* AppDelegate.swift in Sources */,
-				59427D53267B9494003E669E /* SceneDelegate.swift in Sources */,
+				59F53D15267E25BA000B782F /* Extensions.swift in Sources */,
+				59427D92267D1874003E669E /* NewsViewModel.swift in Sources */,
+				59F53D12267E19F5000B782F /* NewsDetailsViewController.swift in Sources */,
+				59427D86267B983A003E669E /* ApiRouter.swift in Sources */,
+				59427D85267B983A003E669E /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +570,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		59427D56267B9494003E669E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				59427D57267B9494003E669E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		59427D5B267B9496003E669E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,6 +699,7 @@
 		};
 		59427D78267B9497003E669E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C251D030ACFE42400284393 /* Pods-TempoMobileTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +719,7 @@
 		};
 		59427D79267B9497003E669E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23FE51D4D18BF319DFFCFEE6 /* Pods-TempoMobileTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +739,7 @@
 		};
 		59427D7B267B9497003E669E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3D9F57876FD7E38FADEC077 /* Pods-TempoMobileTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +762,7 @@
 		};
 		59427D7C267B9497003E669E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7B212E36296B61DEACEA44F /* Pods-TempoMobileTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +785,7 @@
 		};
 		59427D7E267B9497003E669E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0329BE9C5DF721D8D8F1CEF8 /* Pods-TempoMobileTask-TempoMobileTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +806,7 @@
 		};
 		59427D7F267B9497003E669E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26B1682FD65E84DAAA356FC1 /* Pods-TempoMobileTask-TempoMobileTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
